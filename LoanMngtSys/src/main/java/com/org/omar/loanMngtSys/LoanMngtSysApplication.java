@@ -9,5 +9,6 @@ public class LoanMngtSysApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(LoanMngtSysApplication.class, args);
+        System.out.println("app is running");
     }
 }
