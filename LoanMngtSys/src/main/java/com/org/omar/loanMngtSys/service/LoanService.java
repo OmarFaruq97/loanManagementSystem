@@ -1,6 +1,6 @@
 package com.org.omar.loanMngtSys.service;
 
-import com.org.omar.loanMngtSys.model.*;
+import com.org.omar.loanMngtSys.entities.*;
 import com.org.omar.loanMngtSys.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
@@ -12,8 +12,10 @@ import java.util.*;
 
 @Service
 public class LoanService {
-    @Autowired private LoanRepository loanRepository;
-    @Autowired private PaymentRepository paymentRepository;
+    @Autowired
+    private LoanRepository loanRepository;
+    @Autowired
+    private PaymentRepository paymentRepository;
 
     public Loan createLoan(Loan loan) {
         double interest = (loan.getPrincipalAmount() * loan.getInterestRate() * (loan.getTenureMonths() / 12.0)) / 100;

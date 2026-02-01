@@ -1,4 +1,4 @@
-package com.org.omar.loanMngtSys.model;
+package com.org.omar.loanMngtSys.entities;
 
 public enum LoanStatus {
     ACTIVE, CLOSED, DEFAULTED

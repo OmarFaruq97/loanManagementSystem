@@ -1,6 +1,6 @@
 package com.org.omar.loanMngtSys.controller;
 
-import com.org.omar.loanMngtSys.model.*;
+import com.org.omar.loanMngtSys.entities.*;
 import com.org.omar.loanMngtSys.service.LoanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
